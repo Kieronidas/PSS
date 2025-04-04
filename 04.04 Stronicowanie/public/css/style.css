@@ -1,0 +1,1104 @@
+/* Resetowanie stylów */
+body, h1, ul, a, summary {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+p {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+
+
+
+/* Ustawienia bazowe dla całej strony */
+html, body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden; /* Zapobiega przesuwaniu się strony w poziomie */
+}
+
+/* Header */
+header {
+   
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #fbff00;
+    border-radius: 5px;
+}
+
+/* Auth buttons in the top-right corner */
+.auth-buttons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons a {
+    background: #007BFF;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.auth-buttons a:hover {
+    background: #FFC107;
+}
+
+/* Hero Section */
+.hero {
+    background:#2b2929;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    min-height: 200px; /* Zapewnia minimalną wysokość */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Dynamiczna sekcja tła */
+.background-section {
+    background: url('../images/high-angle-shot-warsaw-poland-sunset.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 400px; /* Zapewnia minimalną wysokość */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1; /* Sekcja dostosowuje się do dostępnej przestrzeni */
+}
+
+/* Stopka */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: auto; /* Ustawia stopkę na dole, jeśli treści jest mało */
+  
+   
+    background-size: cover;
+    min-height: 35px; /* Zapewnia minimalną wysokość */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Formularze logowania i rejestracji */
+form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form label {
+    color: #FFD700;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+}
+
+form button {
+    background: #FFD700;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #FFC107;
+}
+
+/* Powiadomienia dla uczestników wydarzenia */
+#event-notifications, #admin-notifications {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#event-notifications h2, #admin-notifications h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+#event-notifications textarea, #admin-notifications textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+}
+
+#event-notifications .btn-primary, #admin-notifications .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#event-notifications .btn-primary:hover, #admin-notifications .btn-primary:hover {
+    background-color: #0056b3;
+}
+h2 {
+    color: #FFD700; 
+    text-shadow: 3px 3px 3px #000; 
+    font-size: 28px; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+.alert {
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+  }
+  
+  /* Błędy na czerwono i pogrubione */
+  .alert-danger {
+    color: red; 
+    font-weight: bold;
+  }
+  
+  /* Ostrzeżenia na pomarańczowo/żółto */
+  .alert-warning {
+    color: #856404; 
+    background-color: #fff3cd; 
+    border: 1px solid #ffeeba;
+  }
+  
+  /* Informacje na zielono lub niebiesko */
+  .alert-success {
+    color: green; 
+    font-weight: bold;
+}
+h3 {
+    color: #ffe600; 
+    text-shadow: 3px 3px 3px #000; 
+    font-size: 28px; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+
+
+
+
+/* Kontener tabeli */
+.event-table {
+    width: 100%;
+    max-width: 1400px; /* Możesz dostosować, np. 1200px lub więcej */
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.event-list-container {
+    max-width: 90%;
+    max-width: 1500px; /* Aby tabela miała przestrzeń */
+    margin: auto;
+    padding: 0 20px; /* Zapewnia odstęp po bokach */
+}
+/* Styl dla nagłówków tabeli */
+.event-table thead {
+    background: #FFD700;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.event-table th, .event-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    color: white;
+}
+
+/* Nawet wiersze lekko ciemniejsze */
+.event-table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover efekt dla wierszy */
+.event-table tbody tr:hover {
+    background: rgba(255, 215, 0, 0.3);
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .event-table {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* Formularz filtrowania */
+.filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Mniejsze odstępy */
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Mniejszy shadow */
+    max-width: 300px;
+    margin: 0 auto 20px;
+    color: white;
+}
+
+/* Zmniejszone pola Typ wydarzenia, Nazwa, Lokalizacja, Opis */
+.filter-group-large {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Mniejsze inputy */
+.filter-group-large input {
+    width: 100%;
+    padding: 6px; /* Mniejszy padding */
+    font-size: 12px; /* Mniejsza czcionka */
+}
+
+.filter-form input,
+.filter-form select {
+    width: 100%;
+    padding: 6px;
+    font-size: 12px;
+    color: black; /* Czarny tekst w polach input */
+    background: white; /* Jasne tło */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Kontener dla pól daty i godziny */
+.filter-group-datetime-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Większy odstęp między datą a godziną */
+}
+
+/* Wiersz dla dat */
+.filter-group-date, 
+.filter-group-time {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Większy odstęp między polami */
+}
+
+/* Każde małe pole (data i godzina) */
+.filter-group-small {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 80px;
+}
+
+.filter-group-small input {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* Status nad Sortuj i Kierunek */
+.filter-group-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Kontener dla sortowania i kierunku */
+.filter-group-sort-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+/* Mniejsze pola dla sortowania i kierunku */
+.filter-group-sort {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    min-width: 70px;
+}
+
+.filter-group-sort select {
+    width: 100%;
+    padding: 5px;
+    font-size: 11px;
+}
+
+/* Przycisk Filtruj */
+.filter-button {
+    background: #FFD700;
+    color: #000;
+    font-weight: bold;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.filter-button:hover {
+    background: #FFC107;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .filter-form {
+        width: 100%;
+    }
+
+    .filter-group-date, 
+    .filter-group-time,
+    .filter-group-sort-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-group-status select {
+        width: 100%;
+    }
+}
+
+#contact {
+    color: white; /* Ustawia cały tekst na biało */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Stylizacja listy kontaktowej */
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact li {
+    font-size: 16px;
+    font-weight: bold;
+    color: white; /* Biały tekst dla e-maila i telefonu */
+}
+
+
+
+#about{
+    color: white; /* Ustawia cały tekst na biało */
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+   
+}
+
+#gallery{
+    color: white; /* Ustawia cały tekst na biało */
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.admin-panel-container{
+    color: rgb(8, 6, 6); /* Ustawia cały tekst na biało */
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+
+}
+.admin-panel-actions{
+    color: red; 
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.button{
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* Nagłówek */
+.catalog-header {
+    text-align: center;
+    color: #FFD700;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Wrapper dla dwóch sekcji */
+.catalog-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 80px; /* Większy odstęp między statusami a typami wydarzeń */
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: stretch; /* Równa wysokość */
+}
+
+/* Każda sekcja (Statusy Wydarzeń i Typy Wydarzeń) */
+.catalog-section {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    width: 48%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+/* Nagłówki sekcji */
+.catalog-section h3, 
+.catalog-section h4 {
+    color: #FFD700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Lista elementów */
+.catalog-list {
+    flex-grow: 1;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.catalog-list li {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Zezwala na złamanie linii */
+    text-align: left;
+    min-height: 50px; /* Większa wysokość */
+    max-width: 100%;
+}
+
+/* Więcej miejsca na tekst */
+.catalog-list li span {
+    display: block;
+    width: 70%; /* Więcej miejsca dla nazwy */
+    white-space: normal; /* Pozwala na łamanie wiersza */
+    overflow: visible;
+    word-break: break-word; /* Przenosi długie słowa */
+    font-size: 16px;
+}
+
+/* Linki Edytuj i Usuń */
+.catalog-list a {
+    color: #FFD700;
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.catalog-list a:hover {
+    text-decoration: underline;
+}
+
+/* Formularze */
+.catalog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Pola input */
+.catalog-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    background: white;
+}
+
+/* Przycisk */
+.catalog-button {
+    background: #FFD700;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.catalog-button:hover {
+    background: #FFC107;
+}
+
+/* Przycisk powrotu */
+.catalog-back {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.catalog-back:hover {
+    text-decoration: underline;
+}
+
+/* Responsywność */
+@media (max-width: 1024px) {
+    .catalog-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .catalog-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .catalog-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .catalog-list li span {
+        width: 100%;
+        text-align: left;
+    }
+
+    .catalog-list a {
+        margin-top: 5px;
+    }
+}
+
+.back-button{
+    color: white;
+    
+}
+
+
+
+
+
+/* Kontener przycisków */
+.event-actions {
+    display: flex;
+    gap: 5px; /* Mniejsze odstępy między przyciskami */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Ogólny styl dla przycisków */
+.event-actions button, 
+.event-actions a {
+    background: #FFD700; /* Kolor złoty */
+    color: black;
+    font-weight: bold;
+    padding: 6px 8px; /* Zmniejszone wymiary */
+    font-size: 12px; /* Mniejsza czcionka */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+    text-align: center;
+    text-decoration: none;
+    min-width: 100px; /* Mniejsza szerokość */
+    min-height: 35px; /* Mniejsza wysokość */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover efekt dla wszystkich przycisków */
+.event-actions button:hover, 
+.event-actions a:hover {
+    background: #FFC107;
+    transform: scale(1.05); /* Delikatne powiększenie */
+}
+
+/* Dodatkowe dopasowanie szerokości dla spójności */
+.event-actions form {
+    display: inline-block;
+}
+
+/* Wyrównanie tekstu w przyciskach */
+.event-actions button, 
+.event-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+/* Poprawiony przycisk "Podgląd zgłoszeń" */
+.pure-button.button-secondary {
+    background: #FFD700 !important;
+    color: black !important;
+    font-weight: bold;
+    padding: 6px 10px; /* Dopasowanie paddingu */
+    font-size: 12px; /* Dopasowanie czcionki */
+    min-width: 100px; /* Stała szerokość */
+    min-height: 30px; /* Stała wysokość */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Dopasowany shadow */
+    transition: background 0.3s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+/* Hover efekt */
+.pure-button.button-secondary:hover {
+    background: #FFC107 !important;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Mocniejszy shadow po najechaniu */
+}
+
+/* Zmniejszenie szerokości niektórych kolumn */
+.event-table th:nth-child(3), /* Data */
+.event-table td:nth-child(3),
+.event-table th:nth-child(4), /* Godzina */
+.event-table td:nth-child(4) {
+    width: 100px; /* Mniejsza szerokość */
+}
+
+.event-table th:nth-child(5), /* Pojemność */
+.event-table td:nth-child(5) {
+    width: 80px;
+}
+
+.event-table th:nth-child(6), /* Status */
+.event-table td:nth-child(6) {
+    width: 120px;
+}
+
+.event-table th:nth-child(7), /* Akcje */
+.event-table td:nth-child(7) {
+    width: 300px;
+}
+
+
+
+
+
+/* Szerokie pola dla nazwy, lokalizacji i opisu */
+.filter-group input[type="text"] {
+    width: 100%;
+}
+
+/* Mniejsze pole dla ilości miejsc */
+.filter-group input[type="number"] {
+    width: 30%;
+}
+
+/* Szerokie pole dla daty z dodatkowym marginesem */
+.filter-group input[type="date"] {
+    width: 30%;
+    margin-right: 10px; /* Odstęp między datą a godziną */
+}
+
+/* Mniejsze pole dla godziny */
+.filter-group input[type="time"] {
+    width: 30%;
+}
+
+/* Kontener dla daty i godziny, aby były obok siebie */
+.date-time-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px; /* Odstęp między polami */
+}
+
+
+/* Dostosowanie etykiet */
+.date-time-container label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Panel uczestnika */
+.participant-panel {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+
+
+
+
+
+/* Stylowanie przycisków */
+.button-success {
+    background: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-warning {
+    background: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-secondary {
+    background: #a32b2b;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.button-disabled {
+    background: grey;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: not-allowed;
+}
+
+.button-success:hover {
+    background: #218838;
+}
+
+.button-warning:hover {
+    background: #c82333;
+}
+
+.button-secondary:hover {
+    background: #0056b3;
+}
+
+/* Komunikaty */
+.message-list {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.message-list li {
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.message-list.error li {
+    background: #dc3545;
+    color: white;
+}
+
+.message-list.info li {
+    background: #28a745;
+    color: white;
+}
+
+/* Wiadomość o braku zapisanych wydarzeń */
+.no-events-message {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Specjalne stylowanie tabeli w Panelu Uczestnika */
+.participant-table {
+    width: 95% !important; /* Jeszcze większa szerokość */
+    max-width: 1600px; /* Maksymalna szerokość */
+    margin: 15px auto; /* Centrowanie */
+    border-collapse: collapse; /* Usunięcie pustych przestrzeni */
+}
+
+/* Dostosowanie nagłówków */
+.participant-table thead {
+    background: #FFD700;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Ustawienie szerokości dla kolumn */
+.participant-table th, .participant-table td {
+    padding: 6px 10px; /* Mniejsza wysokość */
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #444;
+    white-space: nowrap; /* Zapobiega zawijaniu tekstu */
+}
+
+/* Rozszerzenie kolumny lokalizacji, aby cała treść była w jednej linii */
+.participant-table th:nth-child(2), /* Lokalizacja */
+.participant-table td:nth-child(2) {
+    width: 300px; /* Większa szerokość */
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Jeśli za długie, pojawią się trzy kropki */
+}
+
+/* Zmniejszenie szerokości niektórych kolumn tylko w Panelu Uczestnika */
+.participant-table th:nth-child(3), /* Data */
+.participant-table td:nth-child(3),
+.participant-table th:nth-child(4), /* Godzina */
+.participant-table td:nth-child(4) {
+    width: 100px;
+}
+
+.participant-table th:nth-child(5), /* Pojemność */
+.participant-table td:nth-child(5) {
+    width: 80px;
+}
+
+.participant-table th:nth-child(6), /* Zapisani */
+.participant-table td:nth-child(6) {
+    width: 80px;
+}
+
+.participant-table th:nth-child(7), /* Akcje */
+.participant-table td:nth-child(7) {
+    width: 220px;
+}
+
+/* Zmniejszenie wysokości wierszy */
+.participant-table tbody tr {
+    height: 30px; /* Mniejsza wysokość */
+}
+
+/* Lepsze odstępy */
+.participant-table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.participant-table tbody tr:hover {
+    background: rgba(255, 215, 0, 0.3);
+}
+
+/* Poprawione przyciski */
+.participant-table .button-container {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+/* Mniejsze przyciski w tabeli */
+.participant-table .button-container button,
+.participant-table .button-container a {
+    padding: 4px 6px; /* Zmniejszone przyciski */
+    font-size: 12px;
+    min-width: 90px;
+    min-height: 28px;
+}
+
+/* Responsywność - zmniejszanie tabeli na mniejszych ekranach */
+@media (max-width: 1024px) {
+    .participant-table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .participant-table th, .participant-table td {
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .participant-table th:nth-child(2), /* Lokalizacja */
+    .participant-table td:nth-child(2) {
+        width: auto; /* Na mniejszych ekranach lokalizacja dopasuje się */
+    }
+
+    .participant-table .button-container {
+        flex-direction: column;
+    }
+}
+
+.password-edit-container input[type="password"] {
+    color: black;
+}
+
+input[type="password"] {
+    color: black !important;
+    background-color: white !important;
+    border: 1px solid #ccc;
+    caret-color: black; /* Kolor kursora */
+}
+.pagination {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 5px;
+}
+
+.page-item {
+    display: inline-block;
+}
+
+.page-link {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: yellow;
+    background-color: transparent;
+}
+
+.page-link:hover {
+    background-color: #333;
+    color: white;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.page-item.disabled .page-link,
+.page-item.disabled span.page-link {
+    color: #aaa;
+    cursor: not-allowed;
+    border-color: #eee;
+    background-color: #f8f9fa;
+}
