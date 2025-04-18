@@ -575,7 +575,7 @@ public function action_closeRegistrations() {
         // Pobranie danych z bazy
         $events = App::getDB()->select('events', '*', $conditions);
     
-        // Przypisanie do Smarty (jak w Twoim stylu)
+        // Przypisanie do Smarty 
         App::getSmarty()->assign('events', $events);
         App::getSmarty()->display('partials/eventListPartial.tpl');
         exit();
